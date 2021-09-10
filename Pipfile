@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 django-tinymce = "*"
 django = "==3.2.5"
+django-environ = "*"
 
 [dev-packages]
 
