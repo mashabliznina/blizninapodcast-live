@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main>
+    <div class="container">
+    <p class="lead my-3 episode-mb-bottom episode-mt-top">{{object.theme}}<br>{{object.date}}</p>
+      <h1 class="display-4 fst-italic episode-mb-bottom episode-mt-top">{{object.title}}</h1>
+      <div class="row">
+        <div class="col-10">
+        <div class="lead my-3">
+          {{object.body | safe}}
+        </div>
+        <div id="buzzsprout-player-{{object.buzz_id}}"></div>
+        <script src="https://www.buzzsprout.com/1823938/{{object.buzz_id}}.js?container_id=buzzsprout-player-{{object.buzz_id}}&player=small" type="text/javascript" charset="utf-8"></script>
+        </div>
+      </div> 
+    </div>
+</main>
+    
+{% endblock content %}
