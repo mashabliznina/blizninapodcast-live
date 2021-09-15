@@ -10,6 +10,9 @@ django-environ = "*"
 dj-database-url = "*"
 psycopg2 = "*"
 whitenoise = "*"
+django-filter = "*"
+django-storages = "*"
+boto3 = "*"
 
 [dev-packages]
 
