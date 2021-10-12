@@ -28,7 +28,7 @@ class Comment(models.Model):
 class Episode(models.Model):
     theme = models.CharField(max_length=50)
     date = models.DateTimeField(null=True)
-    title = models.CharField(max_length=30)
+    title = models.CharField(max_length=150)
     body = HTMLField()
     preview = models.CharField(max_length=100, null=True)
     buzz_id = models.CharField(max_length=20, null=True)
