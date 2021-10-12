@@ -31,7 +31,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('ISDEBUG') == "True"
 
-ALLOWED_HOSTS = ['websiteforpodcast.herokuapp.com', '127.0.0.1']
+
+ALLOWED_HOSTS = [env('DOMAIN')]
 
 
 # Application definition
