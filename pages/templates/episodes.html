@@ -8,10 +8,10 @@
         <div class="card shadow-sm position-relative card-height">
             <div class="card-body">
                 <strong class="d-inline-block mb-2 my-text-primary">{{episode.theme}}</strong>
-                <h3 class="mb-0">{{episode.title}}</h3>
+                <h4 class="mb-0">{{episode.title}}</h4>
                 <div class="mb-1 text-muted">{{episode.date|date:"F j, Y"}}</div>
-                <p class="lead my-3">{{episode.preview}}.
-                <a href="/episodes/{{episode.pk}}" class="a-link">далее</a>
+                <p class="lead">{{episode.preview}}.
+                <a href="/episodes/{{episode.pk}}" class="a-link">подробнее</a>
                 </p>
                 <audio controls>
                     <source src="https://www.buzzsprout.com/1823938/{{episode.buzz_id}}.mp3?download=true" type="audio/mpeg">

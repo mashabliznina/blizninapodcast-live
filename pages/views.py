@@ -19,3 +19,9 @@ class EpisodePageView(DetailView):
 class EpisodesListView(ListView):
     model = Episode
     template_name = 'episodes.html'
+
+class SubscribePageView(TemplateView):
+    template_name = 'subscribe.html'
+
+class FeedbackPageView(TemplateView):
+    template_name = 'feedback.html'
