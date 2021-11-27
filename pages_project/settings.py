@@ -34,7 +34,7 @@ DEBUG = env('ISDEBUG') == "True"
 
 ALLOWED_HOSTS = [env('DOMAIN')]
 
-
+ANALYTICS_ID = env('ANALYTICS_ID', default='')
 # Application definition
 
 INSTALLED_APPS = [
@@ -74,6 +74,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'pages_project.context_processors.analytics_import',
             ],
         },
     },

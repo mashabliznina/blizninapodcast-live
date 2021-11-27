@@ -7,6 +7,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    {% if ANALYTICS_ID %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id={{ANALYTICS_ID}}"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+
+                gtag('config', '{{ANALYTICS_ID}}');
+            </script>
+    {% endif %}
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -58,7 +70,8 @@
                     </p>
                     <p class="text-footer footer-mt">
                         Связаться с нами:
-                        <a href=mailto:nudavayrazbiratsya@gmail.com HTML link class="a-link">nudavayrazbiratsya@gmail.com</a>|
+                        <a href=mailto:nudavayrazbiratsya@gmail.com HTML link
+                            class="a-link">nudavayrazbiratsya@gmail.com</a>|
                         <a href="https://t.me/nudavayrazbiratsya" class="a-link">Телеграм</a>
                         <br>
                     </p>
